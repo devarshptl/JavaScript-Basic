@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ComboBox</title>
+    <style>
+        select {
+            margin: 5px;
+            padding: 5px;
+            font-family: tahoma;
+            min-width: 150px;
+        }
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>ComboBox</legend>
+            <select id="state" onchange="onChange()">
+                <option default>Set State...</option>
+            </select>
+            <select id="city">
+                <option default>Set City...</option>
+            </select><br>
+            <button type="submit" name="submit">Submit</button>
+        </fieldset>
+    </form>
+    <p id="display"></p>
+    <script src="./StateCity.js"></script>
+</body>
+</html>
